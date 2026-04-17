@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avinash Mandal — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">AM<span class="dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting" data-animate>Hello, World! 👋</p>
+      <h1 class="hero-name" data-animate>
+        Avinash<br/><span class="accent">Mandal</span>
+      </h1>
+      <p class="hero-sub" data-animate>
+        CS Student @ <span class="accent">Manav Rachna</span> &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Networking Enthusiast
+      </p>
+      <div class="hero-tags" data-animate>
+        <span class="tag">JavaScript</span>
+        <span class="tag">C</span>
+        <span class="tag">Tableau</span>
+        <span class="tag">Networking</span>
+      </div>
+      <div class="hero-cta" data-animate>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
+    <div class="hero-visual" data-animate>
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">AM</span>
+        </div>
+        <svg class="ring-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="8 6" class="ring-dash"/>
+        </svg>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Avinash Mandal</strong>, a passionate Computer Science student at <strong>Manav Rachna</strong> University. I love building things that live on the internet and understanding how networks make it all possible.
+          </p>
+          <p>
+            My journey started with <strong>C programming</strong> — learning how computers think at a low level — and grew into web development with <strong>JavaScript</strong> and data visualization using <strong>Tableau</strong>.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring <strong>networking concepts</strong>, designing systems, or experimenting with new tech.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Skills Mastered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="1">0</span>
+            <span class="stat-label">Years Coding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-skill>
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, async/await, ES6+, event handling, and building interactive web apps.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill>
+          <div class="skill-icon">🔧</div>
+          <h3>C Programming</h3>
+          <p>Pointers, memory management, data structures, algorithms, and system-level programming.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill>
+          <div class="skill-icon">📊</div>
+          <h3>Tableau</h3>
+          <p>Data visualization, interactive dashboards, charts, and turning raw data into insights.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill>
+          <div class="skill-icon">🌐</div>
+          <h3>Networking</h3>
+          <p>TCP/IP, OSI model, subnetting, protocols, and understanding how the internet works.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill>
+          <div class="skill-icon">🌍</div>
+          <h3>HTML & CSS</h3>
+          <p>Semantic HTML5, responsive design, Flexbox, Grid, and crafting clean web interfaces.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card" data-skill>
+          <div class="skill-icon">🧠</div>
+          <h3>Problem Solving</h3>
+          <p>Logical thinking, DSA fundamentals, and breaking down complex problems step by step.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-project>
+          <div class="project-header">
+            <span class="project-icon">🖥️</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⌥</a>
+              <a href="#" class="project-link" title="Live">↗</a>
+            </div>
+          </div>
+          <h3>Network Topology Visualizer</h3>
+          <p>An interactive web app to visualize network topologies using JavaScript Canvas. Drag and drop nodes to design your own network.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Canvas</span><span>Networking</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project>
+          <div class="project-header">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="#" class="project-link">⌥</a>
+              <a href="#" class="project-link">↗</a>
+            </div>
+          </div>
+          <h3>Sales Data Dashboard</h3>
+          <p>A Tableau dashboard analyzing sales trends and performance KPIs from a retail dataset, with dynamic filters and drill-downs.</p>
+          <div class="project-tags">
+            <span>Tableau</span><span>Data Viz</span><span>Analytics</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project>
+          <div class="project-header">
+            <span class="project-icon">🔗</span>
+            <div class="project-links">
+              <a href="#" class="project-link">⌥</a>
+              <a href="#" class="project-link">↗</a>
+            </div>
+          </div>
+          <h3>Linked List Library in C</h3>
+          <p>A reusable C library implementing singly, doubly, and circular linked lists with full CRUD operations and memory safety.</p>
+          <div class="project-tags">
+            <span>C</span><span>Data Structures</span><span>Algorithms</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project>
+          <div class="project-header">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <a href="#" class="project-link">⌥</a>
+              <a href="#" class="project-link">↗</a>
+            </div>
+          </div>
+          <h3>Subnet Calculator</h3>
+          <p>A JavaScript-based tool to calculate subnets, CIDR ranges, broadcast addresses, and available host counts instantly.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Networking</span><span>Tools</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-sub">I'm open to collaborations, internships, and interesting conversations. Let's connect!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:avinash@manav.edu.in" class="contact-value">avinash@manav.edu.in</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🏫</span>
+            <div>
+              <p class="contact-label">University</p>
+              <span class="contact-value">Manav Rachna University</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Delhi, India</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">GitHub</a>
+            <a href="#" class="social-btn">LinkedIn</a>
+            <a href="#" class="social-btn">Twitter</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required/>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required/>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <p class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & Built by <span class="accent">Avinash Mandal</span> &nbsp;·&nbsp; © 2025</p>
+    <p class="footer-quote">"Code is poetry written for machines."</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
